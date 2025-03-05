@@ -33,8 +33,11 @@
         Number.parseInt(n) converter para número inteiro
         Number.parseFloat(n) converter para número flutuante
         Number(n) converte para número em geral
-        (n).toFixed(2) para duas casa decimais
-        (n).toFixed(2).replace('.',',') para trocar (.) por (,)
+        n.toFixed(2) para duas casa decimais
+        n.toFixed(2).replace('.',',') para trocar (.) por (,)
+        EXTRA
+        n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) >>> Numero em formato para moeda brasileira.
+        
         -------------------
         String(n) converter para string
         n.toString() converter para string também
