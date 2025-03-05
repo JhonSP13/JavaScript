@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos no Javascript</title>
+    <style>
+        * {
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, serif;
+        }
+
+        h1 {
+            background-color: lightgrey;
+            color: rgb(247, 152, 36);
+        }
+
+        p {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, molestias adipisci ducimus officia numquam, mollitia dicta expedita tenetur doloribus, laboriosam magni obcaecati! Amet adipisci omnis eius hic! Repudiandae, facilis nulla.</p>
+    <script>
+        var n1 = Number(window.prompt("Digite um número:"))
+        var n2 = Number(window.prompt("Digite outro número:"))
+        var soma = n1 + n2
+        //window.alert("A soma de: " + n1 + " + " + n2 + " = " + soma + " !")
+        window.alert('A soma de: ${n1} + ${n2} = ${soma} !') //mais organizado
+        /*
+        Number.parseInt(n) converter para número inteiro
+        Number.parseFloat(n) converter para número flutuante
+        Number(n) converte para número em geral
+        -------------------
+        String(n) converter para string
+        n.toString() converter para string tbm
+        */
+        
+    </script>
+</body>
+</html>
