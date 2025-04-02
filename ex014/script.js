@@ -5,17 +5,21 @@ function carregar() {
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas!`
     if (hora >= 6 && hora < 12) {
-        //BOM DIA
+        msg.innerHTML = `Agora são ${hora} horas! Bom Dia.`
         img.src = 'imagens/manha.webp'
+        document.body.style.background = '#FCC35D'
     } else if (hora >= 12 && hora < 18) {
-        //BOA TARDE
+        msg.innerHTML = `Agora são ${hora} horas! Boa Tarde.`
         img.src = 'imagens/tarde.jpeg'
+        document.body.style.background = '#5F9B89'
     } else  if (hora >= 18 && hora < 23) {
-        //BOA NOITE
+        msg.innerHTML = `Agora são ${hora} horas! Boa Noite.`
         img.src = 'imagens/crepusculo.jpg'
+        document.body.style.background = '#063978'
     } else {
-        //BOA MADRUGADA
+        msg.innerHTML = `Agora são ${hora} horas! Boa Madrugada.`
         img.src = 'imagens/noite.jpeg'
+        document.body.style.background = '#243231'
     }
 
 }
