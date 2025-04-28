@@ -3,7 +3,6 @@ function gerar() {
     var visor = document.getElementById('visor')
     var mult = 0
     var n = Number(num.value)
-    var calc = n * mult
     if (num.value.length == 0) {
         window.alert('Por favor, digite um número!')
     } else{
