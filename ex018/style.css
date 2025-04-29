@@ -32,6 +32,10 @@ img {
     border-radius: 30px;
 }
 
+select { 
+    padding: 0px 100px 0px 100px;
+}
+
 footer {
     color: white;
     text-align: center;
