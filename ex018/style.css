@@ -25,6 +25,10 @@ div {
     text-align: center;
 }
 
+select {
+    width: 150px;
+}
+
 
 img {
     height: 300px;
