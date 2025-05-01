@@ -10,6 +10,7 @@ function isNumero(n) {
         return false
     }
 }
+// A função acima será utilizado a seguir como paramêtro para adicinar junto a 'funtion' logo abaixo, para validar se o número é valido e se o número já esta na lista.
 
 function inLista(n, l) {
     if(l.indexOf(Number(n)) != -1) {
@@ -18,6 +19,8 @@ function inLista(n, l) {
         return false
     }
 }
+
+// A função abaixo adiciona na lista de valores(arrays) e na lista(visual) -> criando um option que será insirido dentro de 'select'; os algoritimos fora da function será executado sempre que adicionar() for executado, limpando o input e o selecionando novamente para uma nova entrada.
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
@@ -32,6 +35,8 @@ function adicionar() {
     num.value = ''
     num.focus()
 }
+
+// Abaixo em fim finalizamos, tratando valores recebidos apresentando informções recebidas acimas.
 
 function finalizar() {
     if(valores.length == 0) {
